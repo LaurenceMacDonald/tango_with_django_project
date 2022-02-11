@@ -1,12 +1,12 @@
-<!DOCTYPE html>
-<html>
-{% load staticfiles%} 
+{% extends 'rango/base.html' %}
 
-	<head>
-		<title> Rango </title>
-	</head>
-	
-	<body>
+{% load staticfiles %}
+
+{% block title_block %}
+    Rango: About Page
+{% endblock %}
+
+{% block body_block %}
 		<h1> Rango says...</h1>
 		<div>
 			here is the about page! <br />
@@ -19,5 +19,4 @@
 			<img src="{{MEDIA_URL}}cat.jpg" 
 			alt = "Picture of a cat"/>
 		</div>
-	</body>
-</html>
+{% endblock %}
